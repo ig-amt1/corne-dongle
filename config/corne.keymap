@@ -4,6 +4,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 
 #define BASE 0
@@ -151,10 +152,10 @@ UNDEAD_KEY(grave, BR_GRAVE)
 
         base_layer {
             bindings = <
-&kp ESCAPE      &kp Q  &kp W  &kp E      &kp R         &kp T        &kp Y    &kp U            &kp I         &kp O    &kp P     &caps_word
-&kp LS(CLCK)    &kp A  &kp S  &kp D      &kp F         &kp G        &kp H    &kp J            &kp K         &kp L    &kp SEMI  &kp QMARK
-&kp LC(ESCAPE)  &kp Z  &kp X  &kp C      &kp V         &kp B        &kp N    &kp M            &kp COMMA     &kp DOT  &kp FSLH  &kp RSHIFT
-                              &lt 3 TAB  &lt 1 ESCAPE  &kp SPACE    &kp RET  &lt 2 BACKSPACE  &lt 6 DELETE
+&kp ESCAPE        &kp Q  &kp W  &kp E      &kp R         &kp T        &kp Y    &kp U            &kp I         &kp O    &kp P     &caps_word
+&kp LS(CLCK)      &kp A  &kp S  &kp D      &kp F         &kp G        &kp H    &kp J            &kp K         &kp L    &kp SEMI  &kp QMARK
+&kp LC(LEFT_GUI)  &kp Z  &kp X  &kp C      &kp V         &kp B        &kp N    &kp M            &kp COMMA     &kp DOT  &kp FSLH  &kp RSHIFT
+                                &lt 3 TAB  &lt 1 ESCAPE  &kp SPACE    &kp RET  &lt 2 BACKSPACE  &lt 6 DELETE
             >;
         };
 
@@ -178,9 +179,9 @@ UNDEAD_KEY(grave, BR_GRAVE)
 
         accent_layer {
             bindings = <
-&trans  &none      &none    &kp HASH  &kp CARET  &none        &kp CARET  &U_acute  &A_tilde  &O_tilde  &kp BR_CCED   &trans
-&trans  &kp GRAVE  &kp DQT  &kp SQT   &kp EXCL   &kp TILDE    &kp GRAVE  &I_acute  &A_acute  &O_acute  &E_acute      &trans
-&trans  &none      &none    &ac_ccdi  &none      &none        &A_grave   &E_circ   &A_circ   &O_circ   &kp TILDE     &trans
+&trans  &none      &none    &kp HASH  &kp CARET  &none        &kp CARET  &U_acute  &A_tilde  &O_tilde  &kp BR_CCED  &trans
+&trans  &kp GRAVE  &kp DQT  &kp SQT   &kp EXCL   &kp TILDE    &kp GRAVE  &I_acute  &A_acute  &O_acute  &E_acute     &trans
+&trans  &none      &none    &ac_ccdi  &none      &none        &A_grave   &E_circ   &A_circ   &O_circ   &kp TILDE    &trans
                             &trans    &trans     &trans       &kp ENTER  &kp BSPC  &kp DEL
             >;
         };
@@ -196,9 +197,9 @@ UNDEAD_KEY(grave, BR_GRAVE)
 
         game_layer {
             bindings = <
-&kp TAB         &trans  &trans  &trans     &trans        &trans    &trans  &trans         &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &trans  &trans  &trans     &trans        &kp F5    &trans  &trans        &kp LEFT_SHIFT  &trans  &trans  &trans
-&kp LCTRL       &trans  &trans  &trans     &trans        &trans    &trans  &trans         &trans  &trans  &trans  &to 0
+&kp TAB         &trans  &trans  &trans     &trans        &trans    &trans  &trans         &trans          &trans  &trans  &trans
+&kp LEFT_SHIFT  &trans  &trans  &trans     &trans        &kp F5    &trans  &trans         &kp LEFT_SHIFT  &trans  &trans  &trans
+&kp LCTRL       &trans  &trans  &trans     &trans        &trans    &trans  &trans         &trans          &trans  &trans  &to 0
                                 &kp LA(M)  &lt 7 ESCAPE  &trans    &trans  &kp RIGHT_WIN  &trans
             >;
         };

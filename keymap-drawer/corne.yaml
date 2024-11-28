@@ -1,4 +1,4 @@
-layout: {qmk_keyboard: corne_rotated, qmk_layout: LAYOUT_split_3x6_3}
+layout: {qmk_keyboard: corne_rotated, layout_name: LAYOUT_split_3x6_3}
 layers:
   base:
   - ESCAPE
@@ -25,7 +25,7 @@ layers:
   - L
   - ;
   - '?'
-  - Ctl+ ESCAPE
+  - Ctl+ LEFT GUI
   - Z
   - X
   - C
@@ -140,7 +140,7 @@ layers:
   - {t: '&U_acute_down', s: '&U_acute_up'}
   - {t: '&A_tilde_down', s: '&A_tilde_up'}
   - {t: '&O_tilde_down', s: '&O_tilde_up'}
-  - BR CCED
+  - ;
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '`'
