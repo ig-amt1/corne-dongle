@@ -217,8 +217,8 @@ layers:
   - {t: ▽, type: trans}
   game:
   - ↹
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Q
+  - W
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -229,8 +229,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - LEFT SHIFT
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - A
+  - S
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - F5
@@ -241,8 +241,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Ctrl
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Z
+  - X
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
