@@ -122,6 +122,34 @@ UNDEAD_KEY(grave, BR_GRAVE)
 
             label = "GUI_UP";
         };
+
+        desktop: desktop {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_GUI>,
+                <&macro_tap>,
+                <&kp D>,
+                <&macro_release>,
+                <&kp LEFT_GUI>;
+
+            label = "DESKTOP";
+        };
+
+        search: search {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp SPACE>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "SEARCH";
+        };
     };
 };
 
@@ -152,10 +180,10 @@ UNDEAD_KEY(grave, BR_GRAVE)
 
         base_layer {
             bindings = <
-&kp ESCAPE        &kp Q  &kp W  &kp E      &kp R         &kp T        &kp Y    &kp U            &kp I         &kp O    &kp P     &caps_word
-&kp LS(CLCK)      &kp A  &kp S  &kp D      &kp F         &kp G        &kp H    &kp J            &kp K         &kp L    &kp SEMI  &kp QMARK
-&kp LC(LEFT_GUI)  &kp Z  &kp X  &kp C      &kp V         &kp B        &kp N    &kp M            &kp COMMA     &kp DOT  &kp FSLH  &kp RSHIFT
-                                &lt 3 TAB  &lt 1 ESCAPE  &kp SPACE    &kp RET  &lt 2 BACKSPACE  &lt 6 DELETE
+&kp ESCAPE        &kp Q  &kp W  &kp E      &kp R         &kp T        &kp Y        &kp U            &kp I         &kp O    &kp P     &caps_word
+&kp LS(CLCK)      &kp A  &kp S  &kp D      &kp F         &kp G        &kp H        &kp J            &kp K         &kp L    &kp SEMI  &kp RS(QMARK)
+&kp LC(LEFT_GUI)  &kp Z  &kp X  &kp C      &kp V         &kp B        &kp N        &kp M            &kp COMMA     &kp DOT  &kp FSLH  &kp RC(PRINTSCREEN)
+                                &lt 3 TAB  &lt 1 ESCAPE  &kp SPACE    &kp LA(RET)  &lt 2 BACKSPACE  &lt 6 DELETE
             >;
         };
 
@@ -164,7 +192,7 @@ UNDEAD_KEY(grave, BR_GRAVE)
 &trans        &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3   &kp NUMBER_4      &kp N5         &kp NUMBER_6   &kp N7           &kp N8        &kp N9                &kp N0                 &trans
 &trans        &kp EXCL       &kp AT_SIGN   &kp HASH       &kp DOLLAR        &kp PERCENT    &kp CARET      &kp AMPERSAND    &kp ASTRK     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp F10
 &kp LEFT_ALT  &kp BACKSLASH  &kp PIPE      &kp LESS_THAN  &kp GREATER_THAN  &kp PLUS       &kp KP_DIVIDE  &kp KP_ASTERISK  &kp KP_EQUAL  &kp KP_PLUS           &kp KP_MINUS           &kp F20
-                                           &kp LGUI       &trans            &kp SPACE      &kp RET        &trans           &kp RALT
+                                           &trans         &trans            &kp SPACE      &kp RET        &trans           &trans
             >;
         };
 
@@ -173,7 +201,7 @@ UNDEAD_KEY(grave, BR_GRAVE)
 &trans        &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3   &kp NUMBER_4      &kp N5         &kp NUMBER_6   &kp N7           &kp N8        &kp N9                &kp N0                 &trans
 &trans        &kp EXCL       &kp AT_SIGN   &kp HASH       &kp DOLLAR        &kp PERCENT    &kp CARET      &kp AMPERSAND    &kp ASTRK     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp F10
 &kp LEFT_ALT  &kp BACKSLASH  &kp PIPE      &kp LESS_THAN  &kp GREATER_THAN  &kp PLUS       &kp KP_DIVIDE  &kp KP_ASTERISK  &kp KP_EQUAL  &kp KP_PLUS           &kp KP_MINUS           &kp F20
-                                           &kp LGUI       &trans            &kp SPACE      &kp RET        &kp RCTRL        &kp RALT
+                                           &trans         &trans            &kp SPACE      &kp RET        &trans           &trans
             >;
         };
 
@@ -197,18 +225,18 @@ UNDEAD_KEY(grave, BR_GRAVE)
 
         game_layer {
             bindings = <
-&kp TAB         &kp Q  &kp W  &trans     &trans        &trans    &trans  &trans         &trans          &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp A  &kp S  &trans     &trans        &kp F5    &trans  &trans         &kp LEFT_SHIFT  &trans  &trans  &trans
-&kp LCTRL       &kp Z  &kp X  &trans     &trans        &trans    &trans  &trans         &trans          &trans  &trans  &to 0
-                              &kp LA(M)  &lt 7 ESCAPE  &trans    &trans  &kp RIGHT_WIN  &trans
+&kp TAB         &kp Q  &kp W  &kp E      &kp R         &kp T        &kp C_VOLUME_UP  &trans         &trans          &trans  &trans        &desktop
+&kp LEFT_SHIFT  &kp A  &kp S  &kp D      &kp F         &kp G        &kp C_VOLUME_UP  &trans         &kp LEFT_SHIFT  &trans  &search       &to 0
+&kp LCTRL       &kp Z  &kp X  &kp C      &kp V         &kp B        &kp K_MUTE       &trans         &trans          &trans  &kp LEFT_GUI  &tog 0
+                              &kp LA(M)  &lt 7 ESCAPE  &kp SPACE    &trans           &kp RIGHT_WIN  &trans
             >;
         };
 
         nav_layer {
             bindings = <
 &trans  &kp PG_UP  &kp AMPS  &kp ASTRK  &kp LPAR   &kp RBRC          &kp C_VOLUME_UP    &trans          &kp UP_ARROW  &trans     &trans    &trans
-&trans  &kp PG_DN  &kp DLLR  &kp PRCNT  &kp CARET  &kp PLUS          &kp C_VOLUME_DOWN  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &kp LGUI  &trans
-&trans  &kp TILDE  &kp EXCL  &kp AT     &kp HASH   &kp PIPE          &kp K_MUTE         &guileft        &gui_up       &guiright  &trans    &trans
+&trans  &kp PG_DN  &kp DLLR  &kp PRCNT  &kp CARET  &kp PLUS          &kp C_VOLUME_DOWN  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &kp LGUI  &desktop
+&trans  &kp TILDE  &kp EXCL  &kp AT     &kp HASH   &kp PIPE          &kp K_MUTE         &guileft        &gui_up       &guiright  &trans    &search
                              &kp LPAR   &kp RPAR   &kp UNDERSCORE    &trans             &trans          &trans
             >;
         };

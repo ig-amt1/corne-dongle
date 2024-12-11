@@ -24,7 +24,7 @@ layers:
   - K
   - L
   - ;
-  - '?'
+  - Sft+ ?
   - Ctl+ LEFT GUI
   - Z
   - X
@@ -36,11 +36,11 @@ layers:
   - ','
   - .
   - /
-  - RSHIFT
+  - Ctl+ PRINTSCREEN
   - {t: ↹, h: accent}
   - {t: ESCAPE, h: number}
   - ␣
-  - ⏎
+  - Alt+ ⏎
   - {t: BACKSPACE, h: symbol}
   - {t: DELETE, h: nav}
   number:
@@ -80,12 +80,12 @@ layers:
   - KP PLUS
   - KP MINUS
   - F20
-  - Gui
+  - {t: ▽, type: trans}
   - {type: held}
   - ␣
   - ⏎
   - {t: ▽, type: trans}
-  - Alt
+  - {t: ▽, type: trans}
   symbol:
   - {t: ▽, type: trans}
   - '1'
@@ -123,12 +123,12 @@ layers:
   - KP PLUS
   - KP MINUS
   - F20
-  - Gui
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ␣
   - ⏎
-  - {t: Ctrl, type: held}
-  - Alt
+  - {type: held}
+  - {t: ▽, type: trans}
   accent:
   - {t: ▽, type: trans}
   - ''
@@ -219,42 +219,42 @@ layers:
   - ↹
   - Q
   - W
+  - E
+  - R
+  - T
+  - VOLUME UP
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&desktop'
   - LEFT SHIFT
   - A
   - S
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - F5
-  - {t: ▽, type: trans}
+  - D
+  - F
+  - G
+  - VOLUME UP
   - {t: ▽, type: trans}
   - LEFT SHIFT
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&search'
+  - {t: base, h: toggle}
   - Ctrl
   - Z
   - X
+  - C
+  - V
+  - B
+  - MUTE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - LEFT GUI
   - {t: base, h: toggle}
   - Alt+ M
   - {t: ESCAPE, h: fgame}
-  - {t: ▽, type: trans}
+  - ␣
   - {t: ▽, type: trans}
   - RIGHT WIN
   - {t: ▽, type: trans}
@@ -282,7 +282,7 @@ layers:
   - ↓
   - →
   - Gui
-  - {t: ▽, type: trans}
+  - '&desktop'
   - {t: ▽, type: trans}
   - '~'
   - '!'
@@ -294,7 +294,7 @@ layers:
   - '&gui_up'
   - '&guiright'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&search'
   - (
   - )
   - _
