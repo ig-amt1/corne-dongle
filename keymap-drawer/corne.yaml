@@ -1,7 +1,7 @@
 layout: {qmk_keyboard: corne_rotated, layout_name: LAYOUT_split_3x6_3}
 layers:
   base:
-  - ESCAPE
+  - ''''
   - Q
   - W
   - E
@@ -13,7 +13,7 @@ layers:
   - O
   - P
   - '%'
-  - Sft+ CLCK
+  - Sft+ =
   - A
   - S
   - D
@@ -39,7 +39,7 @@ layers:
   - Ctl+ PRINTSCREEN
   - {t: ↹, h: accent}
   - {t: ESCAPE, h: number}
-  - ␣
+  - {t: ␣, h: function}
   - Alt+ ⏎
   - {t: BACKSPACE, h: symbol}
   - {t: DELETE, h: nav}
@@ -188,8 +188,8 @@ layers:
   - {t: ▽, type: trans}
   - BT CLR
   - {t: ▽, type: trans}
-  - {type: held}
-  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - SCROLL DOWN
   - F5
@@ -211,7 +211,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
