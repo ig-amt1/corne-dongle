@@ -1,7 +1,7 @@
 layout: {qmk_keyboard: corne_rotated, layout_name: LAYOUT_split_3x6_3}
 layers:
   base:
-  - ''''
+  - MUTE
   - Q
   - W
   - E
@@ -12,7 +12,7 @@ layers:
   - I
   - O
   - P
-  - '%'
+  - PRINTSCREEN
   - Sft+ =
   - A
   - S
@@ -25,7 +25,7 @@ layers:
   - L
   - ;
   - Sft+ ?
-  - Ctl+ LEFT GUI
+  - Ctl+ _
   - Z
   - X
   - C
@@ -36,13 +36,13 @@ layers:
   - ','
   - .
   - /
-  - Ctl+ PRINTSCREEN
+  - Ctl+ -
   - {t: ↹, h: accent}
   - {t: ESCAPE, h: number}
   - {t: ␣, h: function}
   - Alt+ ⏎
-  - {t: BACKSPACE, h: symbol}
-  - {t: DELETE, h: nav}
+  - {t: Caps Lock, h: symbol}
+  - {t: BACKSPACE, h: nav}
   number:
   - {t: ▽, type: trans}
   - '1'
