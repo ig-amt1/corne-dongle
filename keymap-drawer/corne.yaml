@@ -12,7 +12,7 @@ layers:
   - I
   - O
   - P
-  - Caps Word
+  - '%'
   - Sft+ CLCK
   - A
   - S
