@@ -180,19 +180,19 @@ UNDEAD_KEY(grave, BR_GRAVE)
 
         base_layer {
             bindings = <
-&kp C_MUTE        &kp Q  &kp W  &kp E      &kp R         &kp T          &kp Y        &kp U       &kp I            &kp O    &kp P     &kp PRINTSCREEN
-&kp LS(SLASH)     &kp A  &kp S  &kp D      &kp F         &kp G          &kp H        &kp J       &kp K            &kp L    &kp SEMI  &kp RS(QMARK)
-&kp LC(QUESTION)  &kp Z  &kp X  &kp C      &kp V         &kp B          &kp N        &kp M       &kp COMMA        &kp DOT  &kp FSLH  &kp RC(MINUS)
-                                &lt 3 TAB  &lt 1 ESCAPE  &lt 4 SPACE    &kp LA(RET)  &lt 2 CAPS  &lt 6 BACKSPACE
+&kp TAB    &kp Q  &kp W  &kp E      &kp R         &kp T        &kp Y        &kp U         &kp I            &kp O    &kp P      &kp C_VOLUME_UP
+&kp LSHFT  &kp A  &kp S  &kp D      &kp F         &kp G        &kp H        &kp J         &kp K            &kp L    &kp SLASH  &lt 4 C_VOL_DN
+&kp LCTRL  &kp Z  &kp X  &kp C      &kp V         &kp B        &kp N        &kp M         &kp COMMA        &kp DOT  &kp SEMI   &kp RC(C_MUTE)
+                         &lt 3 TAB  &lt 1 ESCAPE  &kp SPACE    &kp LA(RET)  &lt 2 DELETE  &lt 6 BACKSPACE
             >;
         };
 
         number_layer {
             bindings = <
-&trans        &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3   &kp NUMBER_4      &kp N5         &kp NUMBER_6   &kp N7           &kp N8        &kp N9                &kp N0                 &trans
-&trans        &kp EXCL       &kp AT_SIGN   &kp HASH       &kp DOLLAR        &kp PERCENT    &kp CARET      &kp AMPERSAND    &kp ASTRK     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp F10
-&kp LEFT_ALT  &kp BACKSLASH  &kp PIPE      &kp LESS_THAN  &kp GREATER_THAN  &kp PLUS       &kp KP_DIVIDE  &kp KP_ASTERISK  &kp KP_EQUAL  &kp KP_PLUS           &kp KP_MINUS           &kp F20
-                                           &trans         &trans            &kp SPACE      &kp RET        &trans           &trans
+&trans        &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3   &kp NUMBER_4      &kp N5         &kp NUMBER_6   &kp N7          &kp N8          &kp N9        &kp N0        &trans
+&trans        &kp EXCL       &kp AT_SIGN   &kp HASH       &kp DOLLAR        &kp PERCENT    &kp CARET      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT     &kp F10
+&kp LEFT_ALT  &kp BACKSLASH  &kp PIPE      &kp LESS_THAN  &kp GREATER_THAN  &kp PLUS       &kp KP_DIVIDE  &kp LEFT        &kp DOWN        &kp RIGHT     &kp KP_MINUS  &kp F20
+                                           &trans         &trans            &kp SPACE      &kp RET        &trans          &trans
             >;
         };
 

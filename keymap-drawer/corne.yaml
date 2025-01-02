@@ -1,7 +1,7 @@
 layout: {qmk_keyboard: corne_rotated, layout_name: LAYOUT_split_3x6_3}
 layers:
   base:
-  - MUTE
+  - ↹
   - Q
   - W
   - E
@@ -12,8 +12,8 @@ layers:
   - I
   - O
   - P
-  - PRINTSCREEN
-  - Sft+ /
+  - VOLUME UP
+  - Shift
   - A
   - S
   - D
@@ -23,9 +23,9 @@ layers:
   - J
   - K
   - L
-  - ;
-  - Sft+ ?
-  - Ctl+ ?
+  - /
+  - {t: Vol Down, h: function}
+  - Ctrl
   - Z
   - X
   - C
@@ -35,13 +35,13 @@ layers:
   - M
   - ','
   - .
-  - /
-  - Ctl+ -
+  - ;
+  - Ctl+ MUTE
   - {t: ↹, h: accent}
   - {t: ESCAPE, h: number}
-  - {t: ␣, h: function}
+  - ␣
   - Alt+ ⏎
-  - {t: Caps Lock, h: symbol}
+  - {t: DELETE, h: symbol}
   - {t: BACKSPACE, h: nav}
   number:
   - {t: ▽, type: trans}
@@ -63,10 +63,10 @@ layers:
   - $
   - '%'
   - ^
-  - AMPERSAND
-  - '*'
-  - (
-  - )
+  - LEFT ARROW
+  - DOWN ARROW
+  - UP ARROW
+  - →
   - F10
   - LEFT ALT
   - \
@@ -75,9 +75,9 @@ layers:
   - '>'
   - +
   - KP DIVIDE
-  - KP ASTERISK
-  - KP EQUAL
-  - KP PLUS
+  - ←
+  - ↓
+  - →
   - KP MINUS
   - F20
   - {t: ▽, type: trans}
@@ -196,7 +196,7 @@ layers:
   - F6
   - F7
   - F8
-  - {t: ▽, type: trans}
+  - {type: held}
   - Reset
   - Boot
   - {t: ▽, type: trans}
@@ -211,7 +211,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
