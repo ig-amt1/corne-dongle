@@ -13,7 +13,7 @@ layers:
   - O
   - P
   - PRINTSCREEN
-  - Sft+ =
+  - Sft+ /
   - A
   - S
   - D
@@ -25,7 +25,7 @@ layers:
   - L
   - ;
   - Sft+ ?
-  - Ctl+ _
+  - Ctl+ ?
   - Z
   - X
   - C
